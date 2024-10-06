@@ -2,7 +2,7 @@ import React from "react";
 import Counter from "./Counter";
 
 const CounterContainer = ({ stock }) => {
-  const [count, setCount] = React.useState(0);
+  const [count, setCount] = React.useState(1);
 
   const add = () => {
     if (count < stock) setCount(count + 1);

@@ -5,6 +5,7 @@ const ItemDetail = ({ item }) => {
   return (
     <div>
       <CounterContainer stock={item.stock} />
+      <img src={item.imageUrl} alt="" />
       <p>{item.name}</p>
       <p>stock: {item.stock}</p>
     </div>
