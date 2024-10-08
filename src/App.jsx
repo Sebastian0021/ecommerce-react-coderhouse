@@ -3,11 +3,12 @@ import Navbar from "./assets/components/layouts/Navbar";
 import ItemListContainer from "./assets/components/pages/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./assets/components/pages/ItemDetail/ItemDetailContainer";
 import CartContainer from "./assets/components/pages/cart/CartContainer";
+import CartContextProvider from "./assets/context/CartContext";
 
 const App = () => {
   return (
-    <>
-      <BrowserRouter>
+    <BrowserRouter>
+      <CartContextProvider>
         <Navbar />
         <main className="p-5">
           <Routes>
@@ -18,8 +19,8 @@ const App = () => {
             <Route path="*" element={<h2>404 not found</h2>} />
           </Routes>
         </main>
-      </BrowserRouter>
-    </>
+      </CartContextProvider>
+    </BrowserRouter>
   );
 };
 

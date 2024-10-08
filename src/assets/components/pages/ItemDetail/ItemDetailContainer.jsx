@@ -9,7 +9,6 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     const product = vapes.find((vape) => vape.id === id);
-    console.log(product);
     if (product) {
       setItem(product);
     }
