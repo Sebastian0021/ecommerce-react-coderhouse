@@ -3,9 +3,9 @@ import Cart from "./Cart";
 import { CartContext } from "../../../context/CartContext";
 
 const CartContainer = () => {
-  const { cart, deleteFromCart } = useContext(CartContext);
+  const value = useContext(CartContext);
 
-  return <Cart cart={cart} deleteFromCart={deleteFromCart} />;
+  return <Cart {...value} />;
 };
 
 export default CartContainer;
