@@ -16,10 +16,10 @@ const Navbar = () => {
             <Link to="/">Todos</Link>
           </li>
           <li>
-            <Link to="category/geekbar">Geekbar</Link>
+            <Link to="category/Geekbar">Geekbar</Link>
           </li>
           <li>
-            <Link to="category/dummy">Dummy</Link>
+            <Link to="category/Dummy">Dummy</Link>
           </li>
         </ul>
       </nav>

@@ -1,8 +1,9 @@
-const Counter = ({ add, sub, count, addProduct }) => {
+const Counter = ({ add, sub, count, addProduct, stock }) => {
   return (
     <div>
       <div>
         <button
+          disabled={count === stock}
           className="bg-green-500 rounded-full h-6 w-6 flex items-center justify-center text-white"
           onClick={add}
         >
@@ -10,6 +11,7 @@ const Counter = ({ add, sub, count, addProduct }) => {
         </button>
         <p>{count}</p>
         <button
+          disabled={count === 1}
           className="bg-red-500 rounded-full h-6 w-6 flex items-center justify-center text-white"
           onClick={sub}
         >

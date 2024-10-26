@@ -1,11 +1,10 @@
 export const vapes = [
   {
-    id: "1",
     name: "Blow Pop",
     description:
       "Un delicioso sabor a caramelo con chicle que te hará revivir tu infancia.",
-    price: 31.99,
-    stock: 90,
+    price: 31999,
+    stock: 4,
     brand: "Geekbar",
     flavor: "Caramelo con chicle",
     puffs: 1800,
@@ -13,11 +12,10 @@ export const vapes = [
       "https://res.cloudinary.com/do2hylqfb/image/upload/v1727977220/vapes/dkuac6k3rxysxhhaz6q8.webp",
   },
   {
-    id: "2",
     name: "Black Cherry",
     description: "Un sabor intenso de cereza negra con un toque dulce.",
-    price: 33.5,
-    stock: 65,
+    price: 33500,
+    stock: 7,
     brand: "Geekbar",
     flavor: "Cereza negra",
     puffs: 2000,
@@ -25,12 +23,11 @@ export const vapes = [
       "https://res.cloudinary.com/do2hylqfb/image/upload/v1727977220/vapes/dedxj5lyh610ruvdc7ou.webp",
   },
   {
-    id: "3",
     name: "Wacky Watermelon",
     description:
       "Una explosión refrescante de sandía que es perfecta para los días soleados.",
-    price: 28.99,
-    stock: 100,
+    price: 28999,
+    stock: 9,
     brand: "Dummy",
     flavor: "Sandía",
     puffs: 1900,
@@ -38,11 +35,10 @@ export const vapes = [
       "https://res.cloudinary.com/do2hylqfb/image/upload/v1727977220/vapes/btvciv9znbrincqscl5i.webp",
   },
   {
-    id: "4",
     name: "Gummo Gummy",
     description: "Un sabor dulce y masticable a gomitas que te encantará.",
-    price: 29.5,
-    stock: 85,
+    price: 29500,
+    stock: 10,
     brand: "Dummy",
     flavor: "Gomitas",
     puffs: 2100,

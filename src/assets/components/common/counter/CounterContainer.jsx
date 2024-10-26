@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import Counter from "./Counter";
 import { CartContext } from "../../../context/CartContext";
 
-const CounterContainer = ({ product }) => {
-  const [count, setCount] = React.useState(1);
+const CounterContainer = ({ product, quantity }) => {
   const { addToCart } = useContext(CartContext);
+  const [count, setCount] = React.useState(quantity);
 
   const add = () => {
     if (count < product.stock) setCount(count + 1);
@@ -22,6 +22,7 @@ const CounterContainer = ({ product }) => {
     sub,
     count,
     addProduct,
+    stock: product.stock,
   };
 
   return <Counter {...childProps} />;

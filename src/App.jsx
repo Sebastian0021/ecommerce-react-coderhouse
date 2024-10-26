@@ -4,6 +4,7 @@ import ItemListContainer from "./assets/components/pages/ItemListContainer/ItemL
 import ItemDetailContainer from "./assets/components/pages/ItemDetail/ItemDetailContainer";
 import CartContainer from "./assets/components/pages/cart/CartContainer";
 import CartContextProvider from "./assets/context/CartContext";
+import Checkout from "./assets/components/pages/checkout/Checkout";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
             <Route path="category/:category" element={<ItemListContainer />} />
             <Route path="/vape/:id" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<CartContainer />} />
+            <Route path="/checkout" element={<Checkout />} />
             <Route path="*" element={<h2>404 not found</h2>} />
           </Routes>
         </main>

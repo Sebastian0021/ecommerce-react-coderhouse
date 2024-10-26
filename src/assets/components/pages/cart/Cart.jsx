@@ -1,11 +1,11 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Cart = ({
   cart,
   deleteFromCart,
   clearCart,
-  calculateTotalPrice,
-  calculateTotalItems,
+  getTotalPrice,
+  getTotalItems,
 }) => {
   return (
     <>
@@ -13,9 +13,14 @@ const Cart = ({
         <h1 className="text-3xl font-bold inline">Carrito</h1>
         {cart.length !== 0 && (
           <div className="flex items-center gap-2">
-            <p className="ml-2">({calculateTotalItems()})</p>
-            <p>{calculateTotalPrice()}$</p>
+            <p className="ml-2">({getTotalItems()})</p>
+            <p>{getTotalPrice()}$</p>
 
+            <Link to="/checkout">
+              <button className="border bg-green-600 py-1 px-2 rounded-lg text-white">
+                Finalizar compra
+              </button>
+            </Link>
             <button
               onClick={clearCart}
               className="bg-red-600 py-1 px-2 rounded-lg text-white ml-2"
