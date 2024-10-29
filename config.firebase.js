@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyChWB7WeZ84Sn7Y1_VGBhB2o3h4uSWurJc",
-  authDomain: "coderhouse-reactcourse.firebaseapp.com",
-  projectId: "coderhouse-reactcourse",
-  storageBucket: "coderhouse-reactcourse.appspot.com",
-  messagingSenderId: "645699445184",
-  appId: "1:645699445184:web:356e2eaa20c2611a2da825",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
